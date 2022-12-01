@@ -1,0 +1,60 @@
+$color-white: hsl(0, 0%, 100%);
+$color-gray: hsl(0, 0%, 55%);
+$color-black: hsl(0, 0%, 0%);
+$color-dark-gray: hsl(0, 0%, 41%);
+
+$font-alata: "Alata", sans-serif;
+$font-josefin: "Josefin Sans", sans-serif;
+
+$bp-large: 75em; // 1200px
+$bp-medium: 56.25em; // 900px
+$bp-small: 40.5em; // 650px
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-josefin;
+}
+
+.primary-heading {
+  color: $color-white;
+  font-size: 7.5rem;
+  font-weight: 300;
+  padding: 4rem 2rem 2rem 3rem;
+  border: 2px #fff solid;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 5rem;
+  }
+}
+
+.heading-secondary {
+  color: $color-black;
+  font-size: 5rem;
+  font-weight: 300;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3rem;
+  }
+}
+
+.paragraph {
+  font-family: $font-alata;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-top: 3rem;
+  color: $color-gray;
+}
