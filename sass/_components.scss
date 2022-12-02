@@ -7,4 +7,9 @@
   letter-spacing: 5px;
   padding: 1rem 4rem;
   cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-black;
+  }
 }

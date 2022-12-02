@@ -37,11 +37,26 @@
     }
 
     &__link {
+      display: inline-block;
       font-family: $font-alata;
       font-weight: 400;
       font-size: 1.6rem;
       color: $color-white;
       text-decoration: none;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $color-white;
+        transition: width 0.3s;
+      }
+
+      &:hover::after {
+        width: 50%;
+        margin: 0.8rem auto;
+      }
     }
   }
 }
@@ -94,6 +109,11 @@
 
     &-container {
       position: relative;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     &-img {
@@ -139,6 +159,23 @@
 
     display: flex;
     gap: 2rem;
+    cursor: pointer;
+
+    &-style {
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $color-white;
+        transition: width 0.3s;
+        margin: 0.8rem auto 0 auto;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 
   &-nav {
@@ -155,6 +192,21 @@
       font-size: 1.4rem;
       color: $color-white;
       text-decoration: none;
+      margin-bottom: 0.8rem;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $color-white;
+        transition: width 0.3s;
+        margin: 0.8rem auto 0 auto;
+      }
+
+      &:hover::after {
+        width: 50%;
+      }
     }
   }
 
