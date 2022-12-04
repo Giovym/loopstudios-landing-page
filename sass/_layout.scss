@@ -1,6 +1,6 @@
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/desktop/image-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/desktop/image-hero.jpg);
   background-size: cover;
 
   height: 90vh;
@@ -11,8 +11,8 @@
   grid-template-rows: 10vh 10vh 1.25fr 2fr 1.5fr;
 
   @media only screen and (max-width: $bp-small) {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(/images/mobile/image-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/mobile/image-hero.jpg);
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
